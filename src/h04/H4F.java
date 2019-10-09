@@ -1,3 +1,5 @@
+package h04;
+
 import java.applet.*;
 import java.awt.*;
 public class H4F extends Applet {
