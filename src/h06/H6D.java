@@ -1,3 +1,5 @@
+package h06;
+
 import javafx.beans.binding.DoubleExpression;
 
 import java.applet.Applet;
