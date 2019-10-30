@@ -2,7 +2,7 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.nio.file.attribute.UserDefinedFileAttributeView;
+
 
 public class H10F extends Applet {
     TextField ty;
@@ -20,55 +20,49 @@ public class H10F extends Applet {
         sorry = "";
 
 
-
     }
+
     public void paint(Graphics g) {
         g.drawString(sorry, 50, 160);
 
 
-
-
     }
-    class TekstListener implements  ActionListener {
+
+    class TekstListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
             String userInputString = ty.getText();
             userInput = Integer.parseInt(userInputString);
+
             if (firstNumber) {
                 firstNumber = false;
                 Number = userInput;
                 repaint();
-            } else if (userInput < 3)
-                sorry = "Slecht";
+            } else {
+                if (userInput < 4)
+                    sorry = "Slecht";
+                repaint();
+            }
+            if (userInput == 4)
+                sorry = "Onvoldoende";
             repaint();
-        }
+            {
+                if
+                (userInput == 5)
+                    sorry = "Matig";
+                repaint();
+                if
+                (userInput > 5)
+                    sorry = "Voldoende";
+                repaint();
 
-        {
-            if(userInput > 5)
-                sorry = "Matig";
-            repaint();
-        }
-
-        {
-            if (userInput < 7)
-                sorry = "Voldoende";
-            repaint();
-        }
-
-        {
-            if (userInput > 8)
-                sorry = "Goed";
-            repaint();
-        }
-        {
-            if(userInput > 10)
-                sorry = "Error cijfer klopt niet";
-            repaint();
-
-
-
-
-                }
+                if (userInput > 7)
+                    sorry = "Goed";
+                repaint();
+                if (userInput > 10)
+                    sorry = "Je hebt een verkeerde cijfer ingevoerd";
+                repaint();
             }
         }
-
+    }
+}
