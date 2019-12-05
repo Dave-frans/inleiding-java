@@ -54,7 +54,7 @@ public class H8B extends Applet {
 
 
     class KnopListener2 implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) {
             resultaat = ++getal1;
             tekstvak2.setText("" + resultaat);
             repaint();
