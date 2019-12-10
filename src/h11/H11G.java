@@ -11,7 +11,7 @@ public class H11G extends Applet {
     public void paint(Graphics g)
     {
 
-
+//zelfde code weer maar alleen is het nu 50 keer.
         int centerX = 250;
         int centerY = 250;
 

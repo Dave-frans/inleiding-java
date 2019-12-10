@@ -1,4 +1,4 @@
-package H13;
+package h13;
 
 import java.applet.Applet;
 import java.awt.*;
@@ -13,6 +13,7 @@ public class H13D extends Applet {
     }
 
     public void paint(Graphics g) {
+        //Ik heb dit gedaan zodat ik de methode kon aan maken.
         int x = 0;
         int y = 0;
         int width = 0;
@@ -26,19 +27,19 @@ public class H13D extends Applet {
         int centerX = 400;
         int centerY = 400;
 
-
+// diameter 1 de breedte tussen de bomen en diameter2 de hoogte van de bomen op de applet.
         for (int i = 0; i < 5; i++) {
             int diameter1 = 90 * i;
             int diameter2 = 380;
-
+//Hier maak ik de coordinaties aan centers zijn van de applet.
             int x1 = centerX - diameter1;
             int y1 = centerY - diameter2;
 
-
+//deze cordinaties zijn van de cirkel dus de bladeren van de boom ze zijn gelijk om de bol een ronde cirkel te maken.
             int x2 = 80;
             int y2 = 80;
 
-
+//gegevens van de cirkel
             g.setColor(Color.green);
             g.fillOval(x1, y1, x2, y2);
             g.setColor(Color.black);
@@ -59,7 +60,7 @@ public class H13D extends Applet {
 
             int x2 = 20;
             int y2 = 80;
-
+//de g.setColor is een formule om de kleur bruin te krijgen want die kon ik niet vinden.
             g.setColor(new Color(60, 60, 0));
             g.fillRect(x1, y1, x2, y2);
         }

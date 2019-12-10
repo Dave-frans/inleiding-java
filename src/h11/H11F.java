@@ -8,7 +8,7 @@ public class H11F extends Applet
     public void paint(Graphics g)
     {
 
-
+//zelfde code als bij H11E maar alleen als eindpunt g.drawOval.
         int centerX = 150;
         int centerY = 225;
 

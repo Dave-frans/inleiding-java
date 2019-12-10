@@ -13,7 +13,7 @@ public class H12D extends Applet implements ActionListener {
     private int index;
 
 
-    private int[] getallen = {4, 6, 8, 5, 55, 60};
+    private int[] getallen = {4, 10, 43, 60, 85, 100};
 
 
     public void init() {

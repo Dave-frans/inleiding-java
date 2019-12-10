@@ -14,7 +14,7 @@ public class H11H extends Applet {
 
 
         int centerX = 500;
-        int centerY = 225;
+
 
         for(int i =0; i<100;i++)
         {
